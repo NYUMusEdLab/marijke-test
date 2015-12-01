@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Marijke Test</title>
+    <script language="javascript" src="./echochamber.js"></script>
+    <style>
+        body {
+            font-family: 'Bitstream Vera Sans Mono','Courier',monospace;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            color: #D14;
+        }
+
+        textarea {
+            margin-right:10px;
+        }
+
+    </style>
 </head>
 <body>
-<button>button 1</button>
-<button>button 2</button>
-<button>button 3</button>
+<h1>Stats</h1>
+
+<pre id="stats">
+</pre>
+
+<textarea id="dataset"></textarea><textarea id="datasetN"></textarea><br><br>
+
+<button onclick="recalculate()">Recalculate</button>
+<button onclick="random()">Random</button>
 </body>
 </html>
